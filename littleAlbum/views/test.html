@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div class="gfbwff">qqq
+</div>
+<script src="../public/js/jquery.min.js"></script>
+<script>
+        $(function(){
+            $.ajax({
+                url : 请求的路径(action),
+        type : "post", //以Post方式发送请求
+                data : 请求时发送的数据,
+                    dataType : json, //返回的数据类型
+                    async : true, //本次请求是否为异步请求
+                    success : function(返回的数据变量){
+                //请求成功，执行的操作
+            },
+            error : function(){
+                //请求失败，执行的操作
+            }
+        });
+    });
+</script>
+</body>
+</html>
