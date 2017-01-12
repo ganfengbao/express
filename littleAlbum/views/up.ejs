@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>小小相册</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>错误页面</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .row h4{
             text-align: center;
@@ -37,25 +37,14 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-    <div class="container">
-        <div class="row">
-            <a href="/uploads"></a>
-            <% for(var i = 0;i<albums.length; i++){ %>
-                <div class="col-xs-6 col-md-3">
-                    <a href="<%= albums[i] %>" class="thumbnail">
-                        <img src="images/wjj.jpg" alt="...">
-                    </a>
-                    <h4><%= albums[i] %></h4>
-                </div>
-
-            <%}%>
-        </div>
-    </div>
+<div class="container">
+    <img src="/images/404.jpg" alt="">
+</div>
 
 
 
 
-    <script src="js/jquery-ui-1.11.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+<script src="/js/jquery-ui-1.11.4.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>

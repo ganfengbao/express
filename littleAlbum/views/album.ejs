@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>小小相册</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .row h4{
             text-align: center;
@@ -39,23 +39,36 @@
 
     <div class="container">
         <div class="row">
-            <a href="/uploads"></a>
-            <% for(var i = 0;i<albums.length; i++){ %>
+            <ol class="breadcrumb">
+                <li><a href="#">全部相册</a></li>
+                <li class="active"><%=albumname%></li>
+            </ol>
+            <% for(var i = 0;i<images.length; i++){ %>
                 <div class="col-xs-6 col-md-3">
-                    <a href="<%= albums[i] %>" class="thumbnail">
-                        <img src="images/wjj.jpg" alt="...">
+                    <a href="#" class="thumbnail">
+                        <img src="<%=images[i]%>" alt="...">
                     </a>
-                    <h4><%= albums[i] %></h4>
+                    <h4><%=images[i]%></h4>
                 </div>
-
             <%}%>
         </div>
     </div>
 
+<div class="gfbwff">qqq
+</div>
 
 
 
-    <script src="js/jquery-ui-1.11.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+<script>
+    $('.gfbwff').click(function(){
+        alert(1);
+        $.get('http://localhost:8080/login/index',function(data,status){
+            alert(data);
+        });
+    });
+</script>
 </body>
 </html>
