@@ -1,0 +1,29 @@
+.categorize img{
+	width: 53px;
+	height: 53px;
+}
+.categorize{
+	float: left;
+	list-style: none;
+	margin:8px;
+}
+li{
+	list-style: none;
+}
+.mp-hot-prod img{
+	width: 70px;
+	height: 70px;
+}
+.mp-hotlist{
+	margin-left: 80px;
+}
+
+.mp-hotlist-title{
+	display: block;
+}
+.pull-left{
+	float: left;
+}
+.list-group{
+	margin-bottom: -1px;
+}

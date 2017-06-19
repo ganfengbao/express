@@ -17,6 +17,9 @@ exports.showIndex = function(req,res,next){
         });
     });
 };
+exports.showIndex1 = function(req,res,next){
+        res.render('index1');
+};
 
 exports.showAlbum = function(req,res,next){
     //遍历相册中所以的图片

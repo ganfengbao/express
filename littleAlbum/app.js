@@ -10,7 +10,7 @@ app.use(express.static('./public'));
 app.use(express.static('./uploads'));
 app.set('view engine','ejs');
 
-app.get('/',router.showIndex);
+app.get('/',router.showIndex1);
 app.get('/:albumName',router.showAlbum);
 
 app.use(function(req,res){
